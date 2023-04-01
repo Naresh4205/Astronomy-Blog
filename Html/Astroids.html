@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Gallaxy-Astroids</title>
+   <script src="../JavaScript/Astroids.js" defer></script>
+   <link rel="stylesheet" href="../Css/Astroids.css">
+   <link rel="stylesheet" href="../Css/NavigationBar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary of Astroids</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="../index.html"><li class="mli">Home</li></a>
+            <a href="./Info.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <a href="./Planets.html"><li class="sli">planets</li></a>
+                    <a href="./Stars.html"><li class="sli">Stars</li></a>
+                    <a href="./BlackHole.html"><li class="sli">Blackhole</li></a>
+                    <a href="./Astroids.html"><li class="sli">Astroids</li></a>
+                    <a href="./Satelight.html"><li class="sli">satelite</li></a>
+                </ul>
+            </li>
+            <a href="./Login.html"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="gallaryImages">
+        <img class="a" onclick="openImg(1,'C-type Astroid','C-type (carbonaceous) asteroids are the most common variety, forming around 75% of known asteroids.[1] They are volatile-rich and distinguished by a very low albedo because their composition includes a large amount of carbon, in addition to rocks and minerals. Their density averages at about 1.7 g/cm3. They occur most frequently at the outer edge of the asteroid belt, 3.5 astronomical units (AU) from the Sun, where 80% of the asteroids are of this type, whereas only 40% of asteroids at 2 AU from the Sun are C-type.[2] The proportion of C-types may actually be greater than this, because C-types are much darker (and therefore less detectable) than most other asteroid types except for D-types and others that are mostly at the extreme outer edge of the asteroid belt.')">
+        <img class="a" onclick="openImg(2,'M-type Astroid','Asteroids are classified as M-type based upon their generally featureless and flat to red-sloped absorption spectra in the visible to near-infrared and their moderate optical albedo. Along with the spectrally similar E-type and P-type asteroids (both categories E and P were formerly type-M in older systems), they are included in the larger X-type asteroid group and are distinguishable only by optical albedo.Although widely assumed to be metal-rich (the reason for use of M in the classification), the evidence for a high metal content in the M-type asteroids is only indirect, though highly plausible. Their spectra are similar to those of iron meteorites and enstatite chondrites,[4] and radar observations have shown that their radar albedos are much higher than other asteroid classes.')">
+        <img class="a" onclick="openImg(3,'S-type Astroid','S-type asteroids are asteroids with a spectral type that is indicative of a siliceous (i.e. stony) mineralogical composition, hence the name. They have relatively high density. Approximately 17% of asteroids are of this type, making it the second-most common after the carbonaceous C-type.S-type asteroids, with an astronomical albedo of typically 0.20,[1] are moderately bright and consist mainly of iron- and magnesium-silicates. They are dominant in the inner part of the asteroid belt within 2.2 AU, common in the central belt within about 3 AU, but become rare farther out. The largest are 3 Juno (about 240–250 km across) and 15 Eunomia (230 km), with other large S-types being 29 Amphitrite, 532 Herculina and 7 Iris. These largest S-types are visible in 10x50 binoculars at most oppositions.')">
+      </div>
+    <div id="subWindow" style="display:none">
+        <h1 id="close" onclick="closeImg()">X</h1>
+        <img id="subWindowImg" src="" >
+        <h1 id="imageHeading"></h1>
+        <p id="imgpara"></p>
+    </div>
+</body>
+</html>

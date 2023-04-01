@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Gallaxy-Satelight</title>
+   <script src="../JavaScript/Satelight.js" defer></script>
+   <link rel="stylesheet" href="../Css/Satelight.css">
+   <link rel="stylesheet" href="../Css/NavigationBar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary of Satelights</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="../index.html"><li class="mli">Home</li></a>
+            <a href="./Info.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <a href="./Planets.html"><li class="sli">planets</li></a>
+                    <a href="./Stars.html"><li class="sli">Stars</li></a>
+                    <a href="./BlackHole.html"><li class="sli">Blackhole</li></a>
+                    <a href="./Astroids.html"><li class="sli">Astroids</li></a>
+                    <a href="./Satelight.html"><li class="sli">satelite</li></a>
+                </ul>
+            </li>
+            <a href="./Login.html"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="gallaryImages">
+        <img class="a" onclick="openImg(1,'Communication satelight','A communications satellite is an artificial satellite that relays and amplifies radio telecommunication signals via a transponder; it creates a communication channel between a source transmitter and a receiver at different locations on Earth. Communications satellites are used for television, telephone, radio, internet, and military applications.[1] Many communications satellites are in geostationary orbit 22,300 miles (35,900 km) above the equator, so that the satellite appears stationary at the same point in the sky; therefore the satellite dish antennas of ground stations can be aimed permanently at that spot and do not have to move to track the satellite. ')">
+        <img class="a" onclick="openImg(2,'Experimental satelight','TES was launched by the PSLV-C3 rocket from the Sriharikota High Altitude Range (SHAR) at Sriharikota in the south-east Indian coast at 04:53 UT on 22 October 2001. This is the fifth consecutive successful launch of the 294-tonne Polar Satellite Launch Vehicle (PSLV) rocket and the second launch with multiple satellites. The 1108 kg satellite carries a one-meter resolution panchromatic camera is an experimental satellite to demonstrate and validate, in orbit, technologies that could be used in the future satellites of Indian Space Research Organisation (ISRO). It was successfully placed in 572 km Sun-synchronous orbit on 22 October 2001 using the PSLV-C3. The PSLV-C3 also injected two more satellites: PROBA, a Belgian satellite and BIRD, a German satellite.')">
+        <img class="a" onclick="openImg(3,'navigation satelight','A satellite navigation or satnav system is a system that uses satellites to provide autonomous geo-spatial positioning. It allows satellite navigation devices to determine their location (longitude, latitude, and altitude/elevation) to high precision (within a few centimetres to metres) using time signals transmitted along a line of sight by radio from satellites. The system can be used for providing position, navigation or for tracking the position of something fitted with a receiver (satellite tracking). The signals also allow the electronic receiver to calculate the current local time to a high precision, which allows time synchronisation. These uses are collectively known as Positioning, Navigation and Timing (PNT).')">
+        <img class="a" onclick="openImg(4,'scintific satelight','This chapter focuses on scientific applications of satellites covering in detail the contributions made by these satellites to Earth sciences, solar physics, astronomy and astrophysics. Payloads carried by these satellites are also discussed. The chapter also contains a large number of illustrative photographs. Scientific satellites carry a variety of payloads depending upon their intended mission. The main application areas of these satellites include space geodesy (study of Earth), study of Earth s atmosphere, the solar system and the universe. Earth environment studies include studies of the ionosphere, magnetosphere and upper atmosphere. Scientific satellites are also used for tectonics and internal geodynamic measurements.')">
+        <img class="a" onclick="openImg(5,'Small satelight','A small satellite, miniaturized satellite, or smallsat is a satellite of low mass and size, usually under 1,200 kg (2,600 lb).[1] While all such satellites can be referred to as small, different classifications are used to categorize them based on mass. Satellites can be built small to reduce the large economic cost of launch vehicles and the costs associated with construction. Miniature satellites, especially in large numbers, may be more useful than fewer, larger ones for some purposes – for example, gathering of scientific data and radio relay. Technical challenges in the construction of small satellites may include the lack of sufficient power storage or of room for a propulsion system.')">
+        <img class="a" onclick="openImg(6,'Earth observation satelight','An Earth observation satellite or Earth remote sensing satellite is a satellite used or designed for Earth observation (EO) from orbit, including spy satellites and similar ones intended for non-military uses such as environmental monitoring, meteorology, cartography and others. The most common type are Earth imaging satellites, that take satellite images, analogous to aerial photographs; some EO satellites may perform remote sensing without forming pictures, such as in GNSS radio occultation.The first occurrence of satellite remote sensing can be dated to the launch of the first artificial satellite, Sputnik 1, by the Soviet Union on October 4, 1957.[1] Sputnik 1 sent back radio signals, which scientists used to study the ionosphere.')">
+    </div>
+    <div id="subWindow" style="display:none">
+        <h1 id="close" onclick="closeImg()">X</h1>
+        <img id="subWindowImg" src="" >
+        <h1 id="imageHeading"></h1>
+        <p id="imgpara"></p>
+    </div>
+</body>
+</html>

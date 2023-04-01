@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallaxy-Blackhole</title>
+    <script src="../JavaScript/Blackhole.js" defer></script>
+    <link rel="stylesheet" href="../Css/Blackhole.css">
+    <link rel="stylesheet" href="../Css/NavigationBar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary of Black holes</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="../index.html"><li class="mli">Home</li></a>
+            <a href="./Info.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <a href="./Planets.html"><li class="sli">planets</li></a>
+                    <a href="./Stars.html"><li class="sli">Stars</li></a>
+                    <a href="./BlackHole.html"><li class="sli">Blackhole</li></a>
+                    <a href="./Astroids.html"><li class="sli">Astroids</li></a>
+                    <a href="./Satelight.html"><li class="sli">satelite</li></a>
+                </ul>
+            </li>
+            <a href="./Login.html"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="gallaryImages">
+        <img class="a" onclick="openImg(1,'messier_blackhole','M87, in full Messier 87, also called Virgo A or NGC4486, giant elliptical galaxy in the constellation Virgo whose nucleus contains a black hole, the first ever to be directly imaged. M87 is the most powerful known source of radio energy among the thousands of galactic systems constituting the so-called Virgo Cluster.The French astronomer Charles Messier discovered M87 in 1781, and cataloged it as a nebula. M87 is about 16.4 million parsecs (53 million light-years) from Earth and is the second-brightest galaxy within the northern Virgo Cluster, having many satellite galaxies. Unlike a disk-shaped spiral galaxy, M87 has no distinctive dust lanes. Instead, it has an almost featureless, ellipsoidal shape typical of most giant elliptical galaxies, diminishing in luminosity with distance from the center.')">
+        <img class="a" onclick="openImg(2,'cyngus_blackhole','Cygnus X-1 (abbreviated Cyg X-1)[11] is a galactic X-ray source in the constellation Cygnus and was the first such source widely accepted to be a black hole.[12][13] It was discovered in 1971 during a rocket flight and is one of the strongest X-ray sources detectable from Earth, producing a peak X-ray flux density of 2.3×10−23 W/(m2⋅Hz) (2.3×103 jansky).[14][15] It remains among the most studied astronomical objects in its class. The compact object is now estimated to have a mass about 21.2 times the mass of the Sun[5][6] and has been shown to be too small to be any known kind of normal star or other likely object besides a black hole.[16] If so, the radius of its event horizon has 300 km as upper bound to the linear dimension of the source region of occasional X-ray bursts lasting only for about 1 ms')">
+        <img class="a" onclick="openImg(3,'Oj_blackhole','OJ 287 is a BL Lac object 3.5 billion light-years from Earth that has produced quasi-periodic optical outbursts going back approximately 120 years, as first apparent on photographic plates from 1891. Seen on photographic plates since at least 1887,[3] it was first detected at radio wavelengths during the course of the Ohio Sky Survey. It is a supermassive black hole binary.[4] The intrinsic brightness of the flashes corresponds to over a trillion times the Sun s luminosity, greater than the entire Milky Way galaxy s light output.The optical light curve shows that OJ 287 has a periodic variation of 11–12 years with a narrow double peak at maximum brightness.[8] This kind of variation suggests that it is a binary supermassive black hole.')">
+    </div>
+    <div id="subWindow" style="display:none">
+        <h1 id="close" onclick="closeImg()">X</h1>
+        <img id="subWindowImg" src="" >
+        <h1 id="imageHeading"></h1>
+        <p id="imgpara"></p>
+    </div>
+</body>
+</html>
